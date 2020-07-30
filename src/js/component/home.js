@@ -1,16 +1,24 @@
 import React from "react";
+import Buttom from "./buttom.js";
+import Cards from "./card.js";
 import Navbar from "./navbar.js";
 import Jumbotron from "./jumbotron.js";
 import Footer from "./footer.js";
-//include images into your bundle
-
 //create your first component
 export function Home() {
 	return (
-		<div>
-			<Navbar />
+    <Navbar />
 			<Jumbotron />
+    <div className="d-flex display-flex container">
+			<Cards />
+			<Cards />
+			<Cards />
+			<Cards />
+    </div>
 			<Footer />
-		</div>
+		
+	
+			
+
 	);
 }
