@@ -3,7 +3,7 @@ import Buttom from "./buttom";
 
 export default function Cards() {
 	return (
-		<div className="card mx-3">
+		<div className="mx-3 mb-3">
 			<img
 				className="card-img-top"
 				src="https://via.placeholder.com/500x325"

@@ -7,18 +7,16 @@ import Footer from "./footer.js";
 //create your first component
 export function Home() {
 	return (
-    <Navbar />
+		<div>
+			<Navbar />
 			<Jumbotron />
-    <div className="d-flex display-flex container">
-			<Cards />
-			<Cards />
-			<Cards />
-			<Cards />
-    </div>
+			<div className="d-flex container justify-content-between px-0">
+				<Cards />
+				<Cards />
+				<Cards />
+				<Cards />
+			</div>
 			<Footer />
-		
-	
-			
-
+		</div>
 	);
 }
