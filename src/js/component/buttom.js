@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Buttom() {
+export default function Buttom(props) {
 	return (
 		<a href="#" className="btn btn-primary btn-large">
-			Find Out More!
+			{props.description}
 		</a>
 	);
 }

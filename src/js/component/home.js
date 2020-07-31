@@ -8,13 +8,36 @@ import Footer from "./footer.js";
 export function Home() {
 	return (
 		<div>
-			<Navbar />
-			<Jumbotron />
+			<Navbar
+				brand="Start Bootstrap"
+				item1="Home"
+				item2="About"
+				item3="Services"
+				item4="Contact"
+			/>
+			<Jumbotron
+				title="A Warm Welcome!"
+				description="It uses utility classes for typography and spacing to space
+                content out within the larger container."
+				link="Learn more"
+			/>
 			<div className="d-flex container justify-content-between px-0">
-				<Cards />
-				<Cards />
-				<Cards />
-				<Cards />
+				<Cards
+					title="Primer Carta"
+					description="Some quick example text to build on the card title and make up the bulk of the card's content."
+				/>
+				<Cards
+					title="Segunda Carta"
+					description="Some quick example text to build on the card title and make up the bulk of the card's content."
+				/>
+				<Cards
+					title="Tercera Carta"
+					description="Some quick example text to build on the card title and make up the bulk of the card's content."
+				/>
+				<Cards
+					title="Cuarta Carta"
+					description="Some quick example text to build on the card title and make up the bulk of the card's content."
+				/>
 			</div>
 			<Footer />
 		</div>

@@ -1,16 +1,14 @@
 import React from "react";
+import Buttom from "./buttom";
 
-export default function Jumbotron() {
+export default function Jumbotron(props) {
 	return (
 		<div className="jumbotron container my-3">
-			<h1 className="display-4">A Warm Welcome!</h1>
-			<p>
-				It uses utility classes for typography and spacing to space
-				content out within the larger container.
-			</p>
+			<h1 className="display-4">{props.title}</h1>
+			<p>{props.description}</p>
 			<p className="lead">
 				<a className="btn btn-primary btn-lg" href="#" role="button">
-					Learn more
+					<Buttom description="Learn More!" />
 				</a>
 			</p>
 		</div>

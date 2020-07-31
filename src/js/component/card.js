@@ -1,7 +1,7 @@
 import React from "react";
 import Buttom from "./buttom";
 
-export default function Cards() {
+export default function Cards(props) {
 	return (
 		<div className="mx-3 mb-3">
 			<img
@@ -11,14 +11,13 @@ export default function Cards() {
 			/>
 
 			<div className="card-body ">
-				<h5 className="card-title pl-5">Card title</h5>
-				<p className="card-text text-center">
-					Some quick example text to build on the card title and make
-					up the bulk of the card's content.
-				</p>
+				<h5 className="card-title pl-5">{props.title}</h5>
+				<p className="card-text text-center">{props.description}</p>
 			</div>
-			<div className=" card-footer pl-5 d-flex juntify-content-center">
-				<Buttom />
+			<div className=" card-footer ">
+				<div className="w-100 d-flex justify-content-center">
+					<Buttom description="Find Out More!" />
+				</div>
 			</div>
 		</div>
 	);
